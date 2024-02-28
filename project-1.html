@@ -22,7 +22,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -32,32 +32,134 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Me</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Quick Links
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Education</a></li>
+                                <li><a class="dropdown-item" href="#">Experience</a></li>
+                                <li><a class="dropdown-item" href="#">Volunteer Service</a></li>
+                                <li><a class="dropdown-item" href="#">Skills and Interests</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     
-    <section id="home">
-    </section>
-    
-    <section class= "resume-carousel" id="resume">
+    <section class= "home-carousel" id="home">
         <div class="slider-wrapper">
             <div class="slider">
-                <img id="slide-1" src="lake.jpg" alt="Image of a lake and mountain range." />
-                <img id="slide-2" src="mountain.jpg" alt="Image of a mountain range." />
-                <img id="slide-3" src="landscape.jpg" alt="Image of a mountainous view." />
-                <img id="slide-4" src="waterfall.jpg" alt="Image of a waterfall." />
+                <img id="slide-1" src="Campus.jpg" alt="Image of a lake and mountain range." />
+                <img id="slide-2" src="home-bg.jpg" alt="Image of a mountain range." />
+                <img id="slide-3" src="warehouse.jpg" alt="Image of a mountainous view." />
+                <img id="slide-4" src="mission.jpg" alt="Image of a waterfall." />
             </div>
             <div class="slider-nav">
                 <a href="#slide-1"></a>
                 <a href="#slide-2"></a>
                 <a href="#slide-3"></a>
                 <a href="#slide-4"></a>
-              </div>
+            </div>
               <button class="slider-arrow prev" onclick="document.querySelector('.slider').scrollBy({left: -300, behavior: 'smooth'})">&#8249;</button>
               <button class="slider-arrow next" onclick="document.querySelector('.slider').scrollBy({left: 300, behavior: 'smooth'})">&#8250;</button>
             </div>
+    </section>
+
+    <section id="resume">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong>1. Education</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Brigham Young University:</strong> Graduating in April 2026
+                        <br><br>
+                        <strong>Major:</strong> Applying to Information Systems, Strategic Management, and Finance
+                        <br></br>
+                        <strong>GPA:</strong> 3.96
+                        <br><br>
+                        <strong>ACT:</strong> 28
+                        <br><br>
+                        <strong>Classes Taken:</strong> IS201, IS303, ECON110, ACC201, FIN201, IS110, etc.
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>2. Experience</strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Squeeze Media:</strong> Customer Support/Sales Agent at a third-party call center
+                        <br><br>
+                        <strong>Pinto Creek Ranches:</strong> Inventory Manager/Forklift Operator at a potato plant
+                        <br><br>
+                        <strong>Skills:</strong>
+                        <ul>
+                            <li>Communication</li>
+                            <li>Problem-solving</li>
+                            <li>Microsoft Excel</li>
+                            <li>Python</li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>3. Volunteer Service</strong>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>The Church of Jesus Christ of Latter-day Saints:</strong> Volunteer Full-time Missionary
+                        <br><br>
+                        <strong>When:</strong> August 2020 - August 2022
+                        <br><br>
+                        <strong>Where:</strong> Wichita, KS
+                        <br></br>
+                        <strong>Language:</strong> Japanese
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <strong>4. Skills & Interests</strong>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Brigham Young University:</strong> Graduating in April 2025
+                        <br><br>
+                        <strong>Major:</strong> Applying to: Information Systems, Finance and Marketing
+                        <br><br>
+                        <strong>Minor:</strong> Spanish
+                        <br></br>
+                        <strong>GPA:</strong> 3.56
+                        <br><br>
+                        <strong>ACT:</strong> 29
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
     <section id="contactme">
