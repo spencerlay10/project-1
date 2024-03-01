@@ -28,7 +28,7 @@
 }
 .slider {
     display: flex;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 3 / 2;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -62,4 +62,161 @@
 }
 .slider-nav a:hover {
     opacity: 1;
+}
+
+.body, .header, .footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cover-page-header {
+    text-align: center;
+    background-color: #d6c5af63;
+    color: white;
+    padding: 10px 0;
+}
+.cover-page-header h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cover-page-header h2 {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cover-page-header h1,
+.cover-page-header h2 {
+    border: 2px solid white;
+    margin: 10px;
+    background-color: white;
+    opacity: 0.60;
+    color: rgb(0, 0, 0);
+}
+.custom-shape-divider-top-1709154185 {
+    position: absolute;
+    bottom: 50;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1709154185 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 63px;
+}
+.custom-shape-divider-top-1709154185 .shape-fill {
+    fill: #d6c5af45;
+}
+#home {
+    background-color: #d6c5af63;
+}
+#resume h2 {
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.custom-shape-divider-bottom-1709155129 {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1709155129 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+.custom-shape-divider-bottom-1709155129 .shape-fill {
+    fill: #d6c5af45;
+}
+#contactme {
+    background-color: #d6c5af63;
+}
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+/* used chatgpt to help me format the text boxes */
+.contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.contact-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+/* end of chatgpt prompt */
+
+.contact-form textarea {
+    height: 100px;
+}
+.submit {
+    background-color: rgba(97, 89, 89, 0.429);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 7.5px 15px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+.submit:hover {
+    background-color: #d6c5af63;
+}
+.icon-container {
+    background-color: #d6c5af63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.icon-container svg {
+    fill: rgba(97, 89, 89, 0.429);
+    width: 50px;
+    height: 50px;
+    margin: 0 40px;
+}
+
+.navbar, .nav-link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.accordion-item, .accordion-button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
