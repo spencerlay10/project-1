@@ -27,10 +27,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
+                            <a class="nav-link" href="#resume">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
+                            <a class="nav-link" href="#contactme">Contact Me</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -38,10 +38,10 @@
                                 Quick Links
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Education</a></li>
-                                <li><a class="dropdown-item" href="#">Experience</a></li>
-                                <li><a class="dropdown-item" href="#">Volunteer Service</a></li>
-                                <li><a class="dropdown-item" href="#">Skills and Interests</a></li>
+                                <li><a class="dropdown-item" href="#collapseOne" onclick="openAccordion(1)" href="#collapseOne" >Education</a></li>
+                                <li><a class="dropdown-item" href="#collapseTwo" onclick="openAccordion(2)" href="#collapseTwo" >Experience</a></li>
+                                <li><a class="dropdown-item" href="#collapseThree" onclick="openAccordion(3)" href="#collapseThree" >Volunteer Service</a></li>
+                                <li><a class="dropdown-item" href="#collapseFour" onclick="openAccordion(4)" href="#collapseFour" >Skills and Interests</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -91,6 +91,29 @@
         </div>
     </section>
 
+    <!--CHAT GPT GENERATED TO GET NAVBAR TO OPEN ACCORDIONS-->
+    <script>
+        function openAccordion(index) {
+            // Find the accordion button corresponding to the index
+            var accordionBtn = document.getElementById('accordion-btn-' + index);
+            
+            // Check if the accordion item is already open
+            var isOpen = accordionBtn.getAttribute('aria-expanded') === 'true';
+            
+            // Trigger a click event on the accordion button only if it's not already open
+            if (!isOpen) {
+                accordionBtn.click();
+                // Scroll to the top of the opened accordion item
+                setTimeout(function() {
+                    accordionBtn.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 300); // Adjust the timeout value as needed
+            } else {
+                // Scroll to the top of the opened accordion item
+                accordionBtn.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+
     <section id="resume">
         <br><br><br><br>
         <h2>RESUME</h2><br><br>
@@ -98,7 +121,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        data-bs-target="#collapseOne" id="accordion-btn-1" aria-expanded="true" aria-controls="collapseOne">
                         <strong>1. Education</strong>
                     </button>
                 </h2>
@@ -120,7 +143,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        data-bs-target="#collapseTwo" id="accordion-btn-2" aria-expanded="false" aria-controls="collapseTwo">
                         <strong>2. Experience</strong>
                     </button>
                 </h2>
@@ -151,7 +174,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        data-bs-target="#collapseThree" id="accordion-btn-3" aria-expanded="false" aria-controls="collapseThree">
                         <strong>3. Volunteer Service</strong>
                     </button>
                 </h2>
@@ -171,7 +194,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        data-bs-target="#collapseFour" id="accordion-btn-4" aria-expanded="false" aria-controls="collapseFour">
                         <strong>4. Skills & Interests</strong>
                     </button>
                 </h2>
