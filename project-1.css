@@ -71,7 +71,6 @@
 .cover-page-header {
     text-align: center;
     background-color: #d6c5af63;
-    color: white;
     padding: 10px 0;
 }
 .cover-page-header h1 {
@@ -85,11 +84,11 @@
 }
 .cover-page-header h1,
 .cover-page-header h2 {
-    border: 2px solid white;
+    border: 5px solid rgba(97, 89, 89, 0.429);
     margin: 10px;
-    background-color: white;
-    opacity: 0.60;
-    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    opacity: .6;
+    color: black;
 }
 .custom-shape-divider-top-1709154185 {
     position: absolute;
@@ -106,7 +105,8 @@
     height: 63px;
 }
 .custom-shape-divider-top-1709154185 .shape-fill {
-    fill: #d6c5af45;
+    fill: #d6c5af63;
+    opacity: .39;
 }
 #home {
     background-color: #d6c5af63;
@@ -134,7 +134,8 @@
     height: 50px;
 }
 .custom-shape-divider-bottom-1709155129 .shape-fill {
-    fill: #d6c5af45;
+    fill: #d6c5af63;
+    opacity: .39;
 }
 #contactme {
     background-color: #d6c5af63;
